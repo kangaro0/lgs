@@ -1,30 +1,14 @@
-## lgs-web
-> This project is generated with [generator-angular2-typescript](https://github.com/shibbir/generator-angular2-typescript) version 0.10.6.
+## angular2-seed
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
+A simple starter project demonstrating the basic concepts of Angular 2.
 
-## Installation
 
-```bash
-$ npm install -g typescript
-$ npm start
-```
-
-## Production Build
-```bash
-$ npm run build
-```
-
-## Running Unit Tests
-```bash
-$ npm test
-```
-
-## Running End-to-End Tests
-```bash
-# make sure you have a running app
-$ npm run e2e
-```
-
-## License
-<a href="https://opensource.org/licenses/MIT">MIT License</a>
+### Usage
+- Clone or fork this repository
+- Make sure you have [node.js](https://nodejs.org/) installed version 5+
+- Make sure you have NPM installed version 3+
+- `WINDOWS ONLY` run `npm install -g webpack webpack-dev-server typescript` to install global dependencies
+- run `npm install` to install dependencies
+- run `npm start` to fire up dev server
+- open browser to [`http://localhost:3000`](http://localhost:3000)
+- if you want to use other port, open `package.json` file, then change port in `--port 3000` script

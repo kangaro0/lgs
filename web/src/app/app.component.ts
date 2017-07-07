@@ -1,15 +1,9 @@
-import {Component, OnInit} from '@angular/core';
-
-import 'bootstrap/dist/css/bootstrap.css';
-import '../css/main.css';
+import {Component} from '@angular/core';
 
 @Component({
-    selector: 'my-app',
-    template: require('./app.component.html')
+  selector: 'app',
+  styleUrls: [ './app.component.css' ],
+  templateUrl: './app.component.html',
 })
-
-export class AppComponent implements OnInit {
-    ngOnInit() {
-        console.log('AppComponent initializing...');
-    }
+export class AppComponent {
 }
