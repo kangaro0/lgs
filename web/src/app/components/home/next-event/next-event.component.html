@@ -1,0 +1,16 @@
+<div class='next-event' >
+    <div class="next-event-header">
+        Nächster Termin:
+    </div>
+    <div class="next-event-content" routerLink="[ '/events/', event.id ]">
+        <div class="next-event-date">
+            {{ date }}
+        </div>
+        <div class="next-event-name">
+            {{ title }}
+        </div>
+        </div>
+        <div class="next-event-footer">
+            <a routerLink="[ '/events' ]">Alle Events anzeigen</a>
+        </div>
+    </div>

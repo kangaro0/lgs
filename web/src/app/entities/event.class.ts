@@ -1,5 +1,6 @@
 import { IEvent } from './event.interface';
 import { Location } from './location.class';
+import { ILocation } from './location.interface';
 
 export class Event {
     public id: number;
@@ -9,12 +10,12 @@ export class Event {
     public organizer: string;
     public location: Location;
 
-    constructor( eventData: IEvent ){
-        this.id = eventData.id;
-        this.title = eventData.title;
-        this.date = eventData.date;
-        this.time = eventData.time;
-        this.organizer = eventData.organizer;
-        this.location = new Location( eventData.location );
+    constructor( event: IEvent, location: ILocation ){
+        this.id = event.id;
+        this.title = event.title;
+        this.date = event.date;
+        this.time = event.time;
+        this.organizer = event.organizer;
+        this.location = location;
     }
 }
