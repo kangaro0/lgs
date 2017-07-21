@@ -11,43 +11,32 @@ import { IRestService } from '../interfaces/service.interface';
 export class LocationService< ILocation, IUpdateLocation > implements IRestService< ILocation, IUpdateLocation > {
 
     private endpointURL: string = "http://localhost/lgs1/api/public/locations";
+    private headers: Headers;
 
-    constructor( public http: Http ){ }
+    constructor( public http: Http ){
+        this.headers = new Headers();
+        this.headers.append( 'Access-Control-Allow-Origin', '*' );
+     }
 
     set EndpointURL( str: string ) { this.endpointURL = str; }
 
     getAll( ){
-        let headers = new Headers();
-        headers.append( 'Access-Control-Allow-Origin', '*' );
-
-        return this.http.get( this.endpointURL ).flatMap( ( res: Response ) => res.json() ).map( ( item: ILocation ) => item );
+        return this.http.get( this.endpointURL, { headers: this.headers } ).flatMap( ( res: Response ) => res.json() ).map( ( item: ILocation ) => item );
     }
 
     getById( id: number ): Observable<ILocation> {
-        let headers = new Headers();
-        headers.append( 'Access-Control-Allow-Origin', '*' );
-
-        return this.http.get( this.endpointURL + '/' + id, { headers: headers } ).map( ( res: Response ) =>  res.json() ).map( ( item: ILocation ) => item );
+        return this.http.get( this.endpointURL + '/' + id, { headers: this.headers } ).map( ( res: Response ) =>  res.json() ).map( ( item: ILocation ) => item );
     }
 
     create( item: ILocation ): Observable<Response> {
-        let headers = new Headers();
-        headers.append( 'Access-Control-Allow-Origin', '*' );
-
-        return this.http.post( this.endpointURL, JSON.stringify( event )).map( ( res: Response ) => res.json() );
+        return this.http.post( this.endpointURL, JSON.stringify( event ), { headers: this.headers } ).map( ( res: Response ) => res.json() );
     }
 
     update( item: IUpdateLocation ): Observable<Response> {
-        let headers = new Headers();
-        headers.append( 'Access-Control-Allow-Origin', '*' );
-
-        return this.http.put( this.endpointURL + '/' + item["id"], JSON.stringify( event ) ).map( ( res: Response ) => res.json() );
+        return this.http.put( this.endpointURL + '/' + item["id"], JSON.stringify( event ), { headers: this.headers } ).map( ( res: Response ) => res.json() );
     }
 
     delete( id: number ): Observable<Response> {
-        let headers = new Headers();
-        headers.append( 'Access-Control-Allow-Origin', '*' );
-
-        return this.http.delete( this.endpointURL + '/' + id ).map( ( res: Response ) => res.json() );
+        return this.http.delete( this.endpointURL + '/' + id, { headers: this.headers } ).map( ( res: Response ) => res.json() );
     }
 }
