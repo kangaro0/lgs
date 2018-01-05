@@ -8,10 +8,14 @@ import { HttpModule } from '@angular/http';
 
 import { HomeModule } from './components/home/home.module';
 import { BandModule } from './components/band/band.module';
+import { EventsModule } from './components/events/events.module';
+
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -19,10 +23,11 @@ import { BandModule } from './components/band/band.module';
     HttpModule,
     RouterModule.forRoot(rootRouterConfig, { useHash: true }),
     HomeModule,
-    BandModule
+    BandModule,
+    EventsModule
   ],
   providers: [
-    
+    NavbarComponent
   ],
   bootstrap: [ AppComponent ]
 })

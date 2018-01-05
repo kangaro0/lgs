@@ -1,0 +1,34 @@
+<div class='placeholder'></div>
+<div class='events-main'>
+    <div class='events-header'>
+        <div class='events-heading'>
+            <h2>Events</h2>
+        </div>
+        <div class='events-text'>
+            Hier findet ihr unsere anstehenden Termine.
+        </div>
+    </div>
+
+    <div class='event-holder'>
+        <div class='event-list'>
+            <div class='item' *ngFor='let event of events'>
+                <div class='date'>
+                    {{ event.day }}.{{ event.month }}
+                </div>
+                <div class='title'>
+                    {{ event.title }}
+                </div>
+            </div>
+        </div>
+        <div class='event-detail'>
+            <div class='row' *ngFor='let event of events' id='{{ event.id }}' >
+                <div class='col-md-6'>
+
+                </div>
+                <div class='col-md-6'>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

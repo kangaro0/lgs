@@ -17,7 +17,7 @@ import { NextEventComponent } from './next-event/next-event.component';
     imports: [
         BrowserModule,
         ReactiveFormsModule,
-        HttpModule,
+        HttpModule
     ],
     providers: [
         EventService,

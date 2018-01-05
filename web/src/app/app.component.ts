@@ -1,4 +1,6 @@
-import {Component} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @Component({
   selector: 'app',
@@ -6,4 +8,5 @@ import {Component} from '@angular/core';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
+
 }

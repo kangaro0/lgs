@@ -12,6 +12,8 @@ import { Event } from '../../../entities/event.class';
 import { ILocation, IUpdateLocation } from '../../../entities/location.interface';
 import { Location } from '../../../entities/location.class';
 
+declare var $;
+
 @Component({
     selector: 'next-event',
     styleUrls: [ './next-event.component.css' ],
@@ -27,15 +29,18 @@ export class NextEventComponent implements OnInit {
     ngOnInit( ){
         this.eventService.next().subscribe( event => {
             this.locationService.getById( event.id ).subscribe( location => {
-                let newEvent = new Event( event, location );
+                let newEvent = new Event( event, location );    
 
-                let part = newEvent.date.split('-');
+                let part = newEvent.date.split('-');    //2015-10-26T07:46:36.611Z
 
-                this.date = part[ 2 ].split(' ')[0] + '.' + part[1]; 
+                this.date = part[ 2 ].split('T')[ 0 ] + '.' + part[ 1 ];
                 this.title = newEvent.title;
             });
         });
     }
 
+    // Mouse Events
+    onMouseEnter(){
 
+    }
 }

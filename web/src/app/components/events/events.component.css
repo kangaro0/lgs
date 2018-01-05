@@ -1,0 +1,58 @@
+
+.placeholder {
+    height: 87px;
+    width: 100%;
+}
+
+.events-main {
+    padding: 2% 2% 0 2%;
+}
+
+.events-header {
+    height: 41px;
+    width: 100%;
+
+    margin-bottom: 2%;
+}
+
+.events-heading {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.events-text {
+    display: inline-block;
+}
+
+/* Event List */
+
+.event-holder {
+    border: 1px solid rgb(62, 63, 58);
+}
+
+.event-list {
+    
+}
+
+.event-list .item {
+    width: 20%;
+    height: 100%;
+}
+
+.event-list .item .date {
+    display: inline-block;
+    width: 23%;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.event-list .item .title {
+    display: inline-block;
+    width: 75%;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    border-right: 1px solid rgb(62, 63, 58);
+}

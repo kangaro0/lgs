@@ -1,0 +1,26 @@
+<div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primar" id='navbar'>
+    <div class="container">
+        <a routerLink="home" class="navbar-brand">
+            {{ title }}
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav ml-auto">
+                <li id='home' class="nav-item" [routerLinkActive]="['active']">
+                    <a class="nav-link" routerLink="home">Home</a>
+                </li>
+                <li id='band' class="nav-item" [routerLinkActive]="['active']">
+                    <a class="nav-link" routerLink="band" >Band</a>
+                </li>
+                <li id='gallery' class="nav-item" [routerLinkActive]="['active']">
+                    <a class="nav-link" routerLink="gallery">Gallery</a>
+                </li>
+                <li id='events' class="nav-item" [routerLinkActive]="['active']">
+                    <a class="nav-link" routerLink="events">Events</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

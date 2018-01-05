@@ -9,21 +9,19 @@ a:link, a:visited, a:hover, a:active {
 /* HEADER */
 
 .page-header {
-    position: relative;
-    height: 526px;
+    height: 470px;
 }
 
 .background {
     position: absolute;
-    top: 75px;
     left: 0;
     z-index: 0;
 
     width: 100%;
     height: 470px;
+    background-image: url('/assets/pictures/header_bg1.png');
     background-size: cover;
     background-position: center;
-    background-image: url('/assets/pictures/header_bg.png');
 }
 
 .foreground {
@@ -42,9 +40,11 @@ a:link, a:visited, a:hover, a:active {
 
 /* MAIN */
 
+/*
 .row {
     margin: 0 !important;
 }
+*/
 
 .page-main {
     
@@ -54,7 +54,7 @@ a:link, a:visited, a:hover, a:active {
     float: left;
     width: 80%;
 
-    height: 700px;
+    height: 500px;
     background-color: #e2e2e2;
 }
 
@@ -62,7 +62,7 @@ a:link, a:visited, a:hover, a:active {
     float: right;
     width: 20%;
 
-    height: 700px;
+    height: 500px;
     background-color: white;
 }
 

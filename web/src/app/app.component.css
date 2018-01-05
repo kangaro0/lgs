@@ -1,38 +1,4 @@
 
-@font-face { 
-    font-family: 'Noto Sans';
-    src: url('https://fonts.googleapis.com/css?family=Noto+Sans') 
-    format('truetype'); 
-}
-
-a:link, a:visited, a:hover, a:active { 
-    color: #000000; 
-}
-
-.navbar {
-    background-color: #222;
-
-    border: 0;
-}
-
-.navbar-brand {
-    height: 100%;
-    
-    font: 45px 'Noto Sans';
-    color: #E0E0E0 !important;
-}
-
-.navbar-brand img {
-    display: inline;
-}
-
-.navbar-nav {
-    padding-top: 2.5%;
-}
-
 .main {
-    
+    padding: 0 0 0 0;
 }
-
-
-

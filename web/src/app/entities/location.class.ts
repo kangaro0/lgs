@@ -8,8 +8,8 @@ export class Location {
     public state: string;
     public postcode: number;
     public country: string;
-    public latitude: string;
-    public longitude: string;
+    public latitude: number;
+    public longitude: number;
 
     constructor( locData: ILocation ){
         this.id = locData.id;
@@ -19,7 +19,7 @@ export class Location {
         this.state = locData.state;
         this.postcode = locData.postcode;
         this.country = locData.country;
-        this.latitude = locData.latitude;
-        this.longitude = locData.longitude;
+        this.latitude = Number( locData.latitude );
+        this.longitude = Number( locData.longitude );
     }
 }
