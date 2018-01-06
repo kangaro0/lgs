@@ -43,7 +43,7 @@ class EventEntity implements JsonSerializable {
 			'title' => $this->title,
 			'date' => $this->date,
 			'organizer' => $this->organizer,
-			'location' => "http://" . $_SERVER["SERVER_NAME"] . "/lgs1/api/public/locations/" . $this->location
+			'location' => "http://" . $_SERVER["SERVER_NAME"] . "/lgs/api/public/locations/" . $this->location
 		];
 	}
 }

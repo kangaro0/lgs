@@ -1345,3 +1345,6 @@
 [2018-01-05 15:49:23] my_logger.INFO: Get Request: /locations/1 [] []
 [2018-01-05 15:49:24] my_logger.INFO: GET Request: /events/next [] []
 [2018-01-05 15:49:24] my_logger.INFO: Get Request: /locations/1 [] []
+[2018-01-05 19:25:40] my_logger.INFO: GET Request: /events [] []
+[2018-01-05 19:26:54] my_logger.INFO: GET Request: /events [] []
+[2018-01-05 19:26:56] my_logger.INFO: Get Request: /locations/1 [] []

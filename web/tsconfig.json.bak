@@ -1,28 +1,29 @@
 {
   "compilerOptions": {
-    "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "module": "commonjs",
     "moduleResolution": "node",
-    "outDir": "dist",
+    "noImplicitAny": true,
+    "removeComments": false,
     "sourceMap": true,
-    "sourceRoot": "src",
-    "noEmitHelpers": true,
+    "suppressImplicitAnyIndexErrors": true,
     "target": "es5",
     "typeRoots": [
-      "node_modules/@types"
+        "./node_modules/@types/"
     ],
     "lib": ["es6", "dom"]
   },
-  "include": [
-    "./src/**/*.module.ts",
-    "./src/*.d.ts"
+  "exclude": [
+    "node_modules"
   ],
+  "awesomeTypescriptLoaderOptions": {
+    "useWebpackText": true
+  },
   "angularCompilerOptions": {
     "debug": false
   },
-  "compileOnSave": false,
+  "compileOnSave": true,
   "buildOnSave": false,
   "atom": { "rewriteTsconfig": false }
 }

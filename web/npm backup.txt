@@ -1,0 +1,17 @@
+/*
+    "@angular/common": "~2.2.1",
+    "@angular/compiler": "~2.2.1",
+    "@angular/compiler-cli": "~2.2.1",
+    "@angular/core": "~2.2.1",
+    "@angular/forms": "~2.2.1",
+    "@angular/http": "~2.2.1",
+    "@angular/platform-browser": "~2.2.1",
+    "@angular/platform-browser-dynamic": "~2.2.1",
+    "@angular/platform-server": "~2.2.1",
+    "@angular/router": "~3.2.1",
+    "@angular/upgrade": "~2.2.1",
+        "angular2-in-memory-web-api": "0.0.21",
+
+        "angular4-router-loader": "^0.3.4",
+    "angular4-template-loader": "^0.6.0",
+    */
